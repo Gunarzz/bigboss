@@ -1,0 +1,16 @@
+{% extends 'index.html' %}
+
+{% block nosaukums %} informācijas iegūšana {% endblock %}
+
+{% block saturs %}
+
+
+<form id="info" method="POST">
+    <h3> ievadi nosaukumu </h3>
+    <input type="text" name="nosaukums" placeholder="nosaukums">
+    <h3> ievadi bildes adresi</h3>
+    <input type="text" name="adrese" placeholder="bildes adrese">
+    <input type="submit" value="nosūtīt">
+
+</form>
+{% endblock %}

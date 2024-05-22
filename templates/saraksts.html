@@ -1,14 +1,32 @@
 {% extends 'index.html' %}
 
-{% block nosaukums %} saraksts {% endblock %}
+{% block nosaukums %}
+saraksts 
+{% endblock %}
 
 {% block saturs %}
 
 <ol>
-    <li>{{vardi[0]}}</li>
-    <li>{{vardi[1]}}</li>
-    <li>{{vardi[2]}}</li>
+    <li>{{vardi[0]}}</li>, <img src={{bildes[0]}} height="150px"></li>
+    <li>{{vardi[1]}}</li>, <img src={{bildes[1]}} height="150px"></li>
+    <li>{{vardi[2]}}</li>, <img src={{bildes[2]}} height="150px"></li>
 </ol>
 
+<h3>anotha one</h3>
+<ol>
+    {% for i in range(garums) %}
+    <li>{{vardi[i]}}, <img src = {{bildes[i]}} height="150px"></li>
+    {% endfor %}
+<ol>
 
+<h3>kopejais saraksts</h3>
+<ol>
+    {% for viens in visi%}
+    <li>{{viens[i]}} <img src={{viens[1]}} height="150px"></li>
+{% endfor %}
+</ol>
+
+{% endblock %}
+
+{% block bilde %}
 {% endblock %}
