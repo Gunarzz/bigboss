@@ -19,7 +19,7 @@ def saraksts():
    kopejais_saraksts = [] 
    faila_rindas = dabut_rindinas()
    for rindas in faila_rindas:
-       elements = rindas.split(", ")
+       elements = rindas.split(",")
        kopejais_saraksts.append(elements)
 
     
